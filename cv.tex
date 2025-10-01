@@ -48,7 +48,7 @@
 %	PACKAGES
 %----------------------------------------------------------------------------------------
 \usepackage{url}
-\usepackage{parskip} 	
+\usepackage{parskip}
 
 %other packages for formatting
 \RequirePackage{color}
@@ -63,7 +63,7 @@
 \usepackage{enumitem}
 
 % centered version of 'X' col. type
-\newcolumntype{C}{>{\centering\arraybackslash}X} 
+\newcolumntype{C}{>{\centering\arraybackslash}X}
 
 %to prevent spillover of tabular into next pages
 \usepackage{supertabular}
@@ -72,11 +72,11 @@
 \setlength{\fullcollw}{0.47\textwidth}
 
 %custom \section
-\usepackage{titlesec}				
+\usepackage{titlesec}
 \usepackage{multicol}
 \usepackage{multirow}
 
-%CV Sections inspired by: 
+%CV Sections inspired by:
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{10pt}{10pt}
@@ -118,7 +118,7 @@
     }
     {
     \end{itemize}
-    \end{minipage}    
+    \end{minipage}
     }
 
 
@@ -129,7 +129,7 @@
 \begin{document}
 
 % non-numbered pages
-\pagestyle{empty} 
+\pagestyle{empty}
 
 %----------------------------------------------------------------------------------------
 %	TITLE
@@ -146,7 +146,7 @@
 \href{https://github.com/boranuzun}{\raisebox{-0.05\height}\faGithub\ boranuzun} \ $|$ \ 
 \href{https://linkedin.com/in/boranuzun}{\raisebox{-0.05\height}\faLinkedin\ boranuzun} \ $|$ \ 
 \href{https://boranuzun.ch}{\raisebox{-0.05\height}\faGlobe \ boranuzun.ch} \ $|$ \ 
-\href{mailto:boran.u3@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ contact@boranuzun.ch} \ $|$ \ 
+\href{mailto:contact@boranuzun.ch}{\raisebox{-0.05\height}\faEnvelope \ contact@boranuzun.ch} \ $|$ \ 
 \href{tel:+41764427098}{\raisebox{-0.05\height}\faMobile \ +41 76 442 70 98} \\
 \end{tabularx}
 
@@ -156,27 +156,30 @@
 
 %Interests/ Keywords/ Summary
 \section{Summary}
-This CV can also be automatically complied and published using GitHub Actions. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
+Diplomé d’un Bachelor of Science HES-SO en Informatique de gestion. Recherche une affectation dans une grande organisation afin d’améliorer mes compétences, collaborer avec des professionnels expérimentés et de travailler sur des projet à fort impact.
 
 %Experience
-\section{Work Experience}
+\section{Experiences}
 
-\begin{jobshort}{Designation}{Jan 2021 - present}
-long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
-\end{jobshort}
-
-
-\begin{joblong}{Designation}{Mar 2019 - Jan 2021}
-\item long long line of blah blah that will wrap when the table fills the column width
-\item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
+\begin{joblong}{Stagiaire support IT N1, HUG}{Aug 2017 - Aug 2018}
+\item Fournir une assistance informatique de niveau 1 aux utilisateurs.
+\item Recevoir les demandes des utilisateurs de l’application SABA (LMS).
+\item Assister les utilisateurs, résoudre les différents problèmes des applications du centre de formation (Espace Carrière, FormaEva).
+\item Etablir des procédures et aides en ligne (documentation).
+\item Diagnostiquer les pannes de matériel.
 \end{joblong}
-  
+
 %Projects
 \section{Projects}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
+\textbf{homelab-iac} & \hfill \href{https://boranuzun.github.io/homelab-docs}{Lien vers le projet} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Ce projet de bachelor consiste à concevoir et déployer un homelab automatisé en appliquant les pratiques Infrastructure as Code, GitOps et DevOps. L’infrastructure repose sur une VM NixOS sous Proxmox et utilise OpenTofu, SOPS et GitHub Actions pour garantir reproductibilité, sécurité et traçabilité. Des services containerisés (Traefik, Uptime Kuma, etc.) sont gérés via Docker. La documentation détaille l’architecture, les outils et les processus pour une infrastructure maintenable et entièrement versionnée.}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Comptarial} & \hfill \href{https://github.com/heg-comptarial/comptarial}{Link vers le dépôt} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Comptarial est une plateforme numérique conçue pour permettre un échange sécurisé de documents entre les fiduciaires et leurs clients. Développée dans le cadre du module 64-56 à la Haute école de gestion de Genève (HEG), cette application vise à moderniser les interactions entre les collaborateurs d'une fiduciaire et ses clients, avec une interface intuitive et une sécurité renforcée.}  \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -184,13 +187,9 @@ long long line of blah blah that will wrap when the table fills the column width
 %----------------------------------------------------------------------------------------
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
+Sep 2021 - Sep 2025 & Bachelor of Science HES-SO in Informatique de gestion at \textbf{HEG} \hfill \\
 
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
 
-2022 & Class 12th Some Board \hfill  (Grades) \\
-
-2021 & Class 10th Some Board \hfill  (Grades) \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -207,8 +206,10 @@ long long line of blah blah that will wrap when the table fills the column width
 %----------------------------------------------------------------------------------------
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
+Frontend &  \normalsize{HTML, CSS/Tailwind, JavaScript, Vue/Nuxt, React/Next}\\
+Backend  &  \normalsize{Python, Java, Spring, Laravel}\\
+Database &  \normalsize{Oracle, PL/SQL, MySQL, NoSQL}\\
+Other   &  \normalsize{UML, Git, Docker, CI/CD, DevOps, IaC, Windows, Linux, Macos}\\
 \end{tabularx}
 
 \vfill
